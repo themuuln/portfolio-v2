@@ -1,15 +1,66 @@
 ---
+import Header from "../components/header/Header";
+import Main from "../components/main/Main.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>Temuulen Undrakhbayar</title>
+
+  <body>
+    <div class="flex font-inter text-zinc-400 justify-center">
+      <div class="container pt-20 flex gap-4">
+        <Header />
+        <Main />
+      </div>
+    </div>
+  </body>
 </html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+  ::selection {
+    background-color: #464646;
+    color: white;
+  }
+  body {
+    background-image: url("/svg/noise.svg");
+    background-color: #121212;
+    color: white;
+  }
+
+  #main {
+    background-image: linear-gradient(#ff0000 1.5px, transparent 1.5px),
+      linear-gradient(to right, #ff0000 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 9999;
+  }
+  .bg-grid {
+    ackground-size: 20px 20px;
+    background-image: linear-gradient(to right, #23262d 1px, transparent 1px),
+      linear-gradient(to bottom, #23262d 1px, transparent 1px);
+    background-position: top center;
+    image-rendering: pixelated;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      10%,
+      white,
+      90%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      10%,
+      white,
+      90%,
+      transparent
+    );
+  }
+</style>

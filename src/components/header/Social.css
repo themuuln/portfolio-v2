@@ -1,0 +1,4 @@
+li:hover>div {
+  transform: translate(3px, -3px);
+  transition-duration: 150ms
+}

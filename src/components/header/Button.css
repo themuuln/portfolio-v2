@@ -1,0 +1,4 @@
+li:hover>div {
+  width: 64px;
+  border-color: rgb(161 161 170 / var(--tw-border-opacity));
+}
