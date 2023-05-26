@@ -13,8 +13,9 @@ import Main from "../components/main/Main.astro";
 
   <body>
     <div
-      class="flex font-inter text-zinc-400 selection:bg-zinc-600 selection:text-gray-200 justify-center"
+      class="flex font-inter noise-container text-zinc-400 selection:bg-zinc-600 selection:text-gray-200 justify-center"
     >
+      <div class="noise"></div>
       <div class="container pt-20 flex gap-4">
         <Header />
         <Main />
@@ -26,7 +27,6 @@ import Main from "../components/main/Main.astro";
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
   body {
-    background-image: url("/svg/noise.svg");
     background-color: #121212;
   }
 
