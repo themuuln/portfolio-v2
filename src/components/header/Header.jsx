@@ -1,4 +1,3 @@
-import React from "react";
 import SocialLinks from "./SocialLinks";
 import HeaderButtons from "./HeaderButtons";
 import { buttonData } from "./data/ButtonData";
@@ -18,7 +17,7 @@ const Header = () => {
             impressive designs to engaging animations, I bring creativity to life, delivering exceptional websites that
             stand out. Trust me to make your online presence unforgettable.
           </p>
-          <ul className="flex mt-10 w-fit text-zinc-500 font-bold flex-col gap-2">
+          <ul className="flex mt-10 w-fit text-zinc-500 text-xl font-bold flex-col gap-2">
             {buttonData.map((button, index) => (
               <HeaderButtons key={index} href={button.href}>
                 {button.title}
