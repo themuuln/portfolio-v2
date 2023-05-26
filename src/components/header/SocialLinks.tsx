@@ -1,5 +1,5 @@
-import { FiArrowUpRight } from "react-icons/fi";
 import "./Social.css";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const SocialLinks = ({ children, href }: any) => {
   return (
